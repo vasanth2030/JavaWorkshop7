@@ -1,11 +1,23 @@
 package basicJava;
 
+import java.util.Scanner;
+
 public class HelloWorld {
 	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
 		String name;      //declaration
-		name="Vasanth";   //initialization
-		int age=21;
-		double height=178.5;
+//		name="Vasanth";   //initialization
+		int age;    
+		double height;
+		
+		System.out.println("Enter your name: ");
+		name=sc.nextLine();
+		
+		System.out.println("Enter your age: ");
+		age=sc.nextInt();
+		
+		System.out.println("Enter your height: ");
+		height= sc.nextDouble();
 		
 		System.out.println("Hello World");	//sysout
 		System.out.println("Name: "+name);
