@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SwitchCase {
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Enter a number: ");
+		System.out.println("Enter a number between 1 and 7: ");
 		int n= sc.nextInt();
 		
 		switch(n)
@@ -31,6 +31,10 @@ public class SwitchCase {
 		case 7:
 			System.out.println("Sunday");
 			break;
+		case 0:
+			break;
+		default:
+			System.out.println("Enter a valid input");
 		}
 		
 		System.out.println("End of program");
