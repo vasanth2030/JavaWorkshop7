@@ -14,7 +14,7 @@ public class Loops {
 		while(i<=n)
 		{
 			//body of loop
-			System.out.println("Hello World "+i);
+			System.out.println("While: Hello World "+i);
 			//updation
 			i++;
 		}
@@ -24,9 +24,17 @@ public class Loops {
 		
 		i=1;
 		do {
-			System.out.println("Hello World "+i);
+			System.out.println("Do while: Hello World "+i);
 			i++;
 		}while(i<=n);
+		
+		System.out.println();
+		System.out.println();
+
+		for(i=1;i<=n;i++)
+		{
+			System.out.println("For: Hello World "+i);
+		}
 		
 		System.out.println("End of program");
 	}
